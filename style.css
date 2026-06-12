@@ -218,10 +218,25 @@ body{
     width: 100%;
 }
 
+
 .logo{
     font-family: "Cormorant Garamond",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: var(--text-xl);
     color:var(--neutral-100);
+}
+
+@media (min-width:1280px) {
+    .hamburger{
+        display: none;
+    }
+    .nav-links{
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        position: static;
+        backdrop-filter: none;
+        background-color: transparent;
+    }
 }
 
 .hero{
@@ -335,6 +350,28 @@ body{
 
 }
 
+@media (min-width:768px) {
+    .text-overlay h1{
+        font-size: var(--text-3xl);
+    }
+    .text-overlay h2{
+        font-size: var(--text-lg);
+    }
+
+    .primary-btn,.secondary-btn{
+        font-size: var(--text-base);
+    }
+}
+
+@media (min-width:1280px) {
+    .text-overlay h1{
+        font-size: var(--text-4xl);
+    }
+    .text-overlay h2{
+        font-size: var(--text-xl)
+    }
+}
+
 .section-starter{
     padding: 2rem;
     background-color: var(--neutral-300);
@@ -411,3 +448,6 @@ body{
     color: var(--neutral-700);
 }
 
+@media (min-width) {
+    
+}
