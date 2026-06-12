@@ -1,3 +1,11 @@
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links")
+
+hamburger.addEventListener("click",()=>{
+    navLinks.classList.toggle("active");
+})
+
+
 const prevBTN = document.querySelector(".prev-btn");
 const nxtBTN = document.querySelector('.nxt-btn');
 const slides = document.querySelectorAll(".slide");
