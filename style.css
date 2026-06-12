@@ -307,3 +307,80 @@ body{
     cursor: pointer;
 
 }
+
+.section-starter{
+    padding: 2rem;
+    background-color: var(--neutral-300);
+}
+
+.section-tag{
+    font-size: var(--text-sm);
+    margin-bottom: 1.5rem;
+    color: var(--primary-500);
+    letter-spacing: 0.6px;
+    font-weight: 500;
+    
+}
+
+.section-title{
+    margin-bottom: 1.5rem;
+    color: var(--neutral-900);
+    font-size: var(--text-xl);
+    font-weight: 700;
+    font-family: "Cormorant Garamond",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.section-subtitle{
+    margin-bottom: 2rem;
+    color: var(--neutral-700);
+    font-size: var(--text-base);
+    font-weight: 500;
+}
+
+.service-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.lucide{
+    color: var(--primary-700);
+}
+
+.icon-box{
+    background-color: var(--neutral-500);
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.service-grid-item{
+    padding: 1.5rem 2rem;
+    border: none;
+    background-color: var(--neutral-400);
+    border-radius: 16px;
+    box-shadow: var(--shadow-3);
+}
+
+.service-grid-item:hover{
+    border-top: 2px solid var(--primary-500);
+}
+
+.service-title{
+    font-family: "Cormorant Garamond",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: var(--text-lg);
+    font-weight: 700;
+    padding: 1rem 0;
+    color: var(--neutral-900);
+}
+
+.service-info{
+    font-size: var(--text-base);
+    font-weight: 500;
+    padding: 1rem 0;
+    color: var(--neutral-700);
+}
+
