@@ -1,0 +1,309 @@
+/* ============================================================
+   LAW FIRM DESIGN SYSTEM — tokens.css
+   Modern & Clean · Charcoal · Warm White · Muted Teal
+   ============================================================ */
+
+
+  
+
+:root {
+
+  /* ==========================================================
+     PRIMARY — Muted Teal  hsl(168, __, __)
+  ========================================================== */
+  --primary-100: hsl(168, 40%, 95%);   /* tints / backgrounds  */
+  --primary-200: hsl(168, 38%, 85%);
+  --primary-300: hsl(168, 36%, 72%);
+  --primary-400: hsl(168, 38%, 57%);
+  --primary-500: hsl(168, 42%, 44%);   /* ★ BASE               */
+  --primary-600: hsl(168, 44%, 34%);   /* text on light bg     */
+  --primary-700: hsl(168, 46%, 25%);
+  --primary-800: hsl(168, 48%, 17%);
+  --primary-900: hsl(168, 50%, 10%);   /* deep shades          */
+
+  /* ==========================================================
+     NEUTRAL — Warm Charcoal  hsl(24–40, __, __)
+  ========================================================== */
+  --neutral-100: hsl(40, 15%, 96%);    /* page background      */
+  --neutral-200: hsl(38, 12%, 88%);    /* borders / dividers   */
+  --neutral-300: hsl(36, 10%, 76%);    /* disabled states      */
+  --neutral-400: hsl(34,  8%, 62%);    /* placeholder text     */
+  --neutral-500: hsl(32,  7%, 48%);    /* secondary text       */
+  --neutral-600: hsl(30,  6%, 36%);    /* body text            */
+  --neutral-700: hsl(28,  5%, 26%);
+  --neutral-800: hsl(26,  5%, 18%);    /* headings             */
+  --neutral-900: hsl(24,  4%, 12%);    /* ★ primary text       */
+
+  /* ==========================================================
+     ACCENT — Success  hsl(145, __, __)
+  ========================================================== */
+  --success-light: hsl(145, 45%, 92%); /* badge background     */
+  --success-base:  hsl(145, 50%, 42%); /* icon / border        */
+  --success-dark:  hsl(145, 52%, 28%); /* text on light bg     */
+
+  /* ACCENT — Warning  hsl(38, __, __) */
+  --warning-light: hsl(38, 95%, 93%);
+  --warning-base:  hsl(38, 90%, 50%);
+  --warning-dark:  hsl(38, 92%, 32%);
+
+  /* ACCENT — Danger  hsl(358, __, __) */
+  --danger-light: hsl(358, 70%, 94%);
+  --danger-base:  hsl(358, 68%, 52%);
+  --danger-dark:  hsl(358, 70%, 34%);
+
+  /* ACCENT — Info  hsl(210, __, __) */
+  --info-light: hsl(210, 65%, 93%);
+  --info-base:  hsl(210, 68%, 50%);
+  --info-dark:  hsl(210, 70%, 33%);
+
+  /* ==========================================================
+     TYPOGRAPHY
+  ========================================================== */
+  --font-heading: 'Cormorant Garamond', Georgia, serif;
+  --font-body:    'DM Sans', system-ui, sans-serif;
+  --font-mono:    'JetBrains Mono', 'Courier New', monospace;
+
+  /* ==========================================================
+     TYPE SCALE
+  ========================================================== */
+  --text-xs:   0.75rem;   /*  12px */
+  --text-sm:   0.875rem;  /*  14px */
+  --text-base: 1rem;      /*  16px */
+  --text-lg:   1.125rem;  /*  18px */
+  --text-xl:   1.25rem;   /*  20px */
+  --text-2xl:  1.5rem;    /*  24px */
+  --text-3xl:  1.875rem;  /*  30px */
+  --text-4xl:  2.25rem;   /*  36px */
+  --text-5xl:  3rem;      /*  48px */
+  --text-6xl:  3.75rem;   /*  60px */
+
+  /* ==========================================================
+     SPACING  (base-4 system)
+  ========================================================== */
+  --space-1: 0.25rem;  /*  4px */
+  --space-2: 0.5rem;   /*  8px */
+  --space-3: 0.75rem;  /* 12px */
+  --space-4: 1rem;     /* 16px */
+  --space-5: 1.5rem;   /* 24px */
+  --space-6: 2rem;     /* 32px */
+  --space-7: 3rem;     /* 48px */
+  --space-8: 4rem;     /* 64px */
+  --space-9: 6rem;     /* 96px */
+
+  /* ==========================================================
+     BORDER RADIUS
+  ========================================================== */
+  --radius-sm:   2px;
+  --radius-md:   6px;
+  --radius-lg:   12px;
+  --radius-xl:   20px;
+  --radius-full: 9999px;
+
+  /* ==========================================================
+     SHADOW SYSTEM
+     Each level = ambient shadow + normal shadow
+     Shadows are tinted with the primary hue (168) for
+     more natural depth vs pure black shadows.
+  ========================================================== */
+
+  /* Level 1 — Base cards, inputs at rest */
+  --shadow-1:
+    0 1px 2px  hsl(168 10% 18% / 0.04),   /* ambient */
+    0 1px 3px  hsl(168 10% 18% / 0.08);   /* normal  */
+
+  /* Level 2 — Hover states, dropdown triggers */
+  --shadow-2:
+    0 1px 3px  hsl(168 10% 18% / 0.06),   /* ambient */
+    0 4px 8px  hsl(168 10% 18% / 0.10);   /* normal  */
+
+  /* Level 3 — Dropdowns, floating panels */
+  --shadow-3:
+    0 2px 4px  hsl(168 10% 18% / 0.08),   /* ambient */
+    0 8px 16px hsl(168 10% 18% / 0.12);   /* normal  */
+
+  /* Level 4 — Popovers, sticky navigation */
+  --shadow-4:
+    0 4px 6px   hsl(168 10% 18% / 0.10),  /* ambient */
+    0 16px 32px hsl(168 10% 18% / 0.14);  /* normal  */
+
+  /* Level 5 — Modals, hero elements */
+  --shadow-5:
+    0 6px 10px  hsl(168 10% 18% / 0.12),  /* ambient */
+    0 24px 48px hsl(168 10% 18% / 0.20);  /* normal  */
+}
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "DM Sans",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem 0;
+    z-index: 100;
+}
+
+.inner-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links{
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: var(--neutral-300);
+    padding-bottom: 0.7rem;
+    font-size: var(--text-base);
+    position: relative;
+}
+
+.nav-links a::after{
+    content: "";
+    width: 0;
+    background-color: var(--primary-500);
+    transition: width 0.8s ease;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.nav-links a:hover::after{
+    width: 100%;
+}
+
+.logo{
+    font-family: "Cormorant Garamond",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: var(--text-xl);
+    color:var(--neutral-100);
+}
+
+.hero{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slider{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.slide.active{
+    opacity: 1;
+    z-index: 1;
+}
+
+.img-overlay{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    z-index: 2;
+    inset: 0;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+    text-align: center;
+}
+
+.text-overlay h1{
+    font-family: "Cormorant Garamond",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: var(--text-2xl);
+    color: var(--primary-100);
+    margin-bottom: 1rem;
+}
+
+.text-overlay h2{
+    font-size: var(--text-base);
+    color: var(--neutral-400)
+}
+
+.hero-btn{
+    position: absolute;
+    z-index: 5;
+    bottom: 30%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    transform: translateX(-50%);
+}
+
+.primary-btn{
+    padding: 1rem 1.5rem;
+    font-family: "Cormorant Garamond",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: var(--text-sm);
+    color: var(--neutral-900);
+    background-color: var(--primary-500);
+    border: none;
+    border-radius: 12px;
+    text-decoration: none;
+}
+
+.secondary-btn{
+    padding: 1rem 1.5rem;
+    font-family: "Cormorant Garamond",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: var(--text-sm);
+    color: var(--neutral-100);
+    border: 1px solid var(--primary-100);
+    border-radius: 12px;
+    text-decoration: none;
+}
+
+
+.nav-btns{
+    position: absolute;
+    z-index: 5;
+    right: 30px;
+    bottom: 20px;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.prev-btn,.nxt-btn{
+    padding: 0.5rem 1rem;
+    backdrop-filter: blur(16px);
+    border-radius: 12px;
+    border: 1px solid white;
+    color: var(--neutral-100);
+    cursor: pointer;
+
+}
