@@ -459,7 +459,6 @@ body{
 .service-info{
     font-size: var(--text-base);
     font-weight: 500;
-    padding: 1rem 0;
     color: var(--neutral-700);
 }
 
