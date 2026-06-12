@@ -300,12 +300,14 @@ body{
 .hero-btn{
     position: absolute;
     z-index: 5;
-    bottom: 30%;
+    bottom: 20%;
     left: 50%;
     display: flex;
     justify-content: center;
     gap: 1rem;
     transform: translateX(-50%);
+    flex-direction: column;
+
 }
 
 .primary-btn{
@@ -364,6 +366,11 @@ body{
     }
     .text-overlay h2{
         font-size: var(--text-lg);
+    }
+
+    .hero-btn{
+        flex-direction: row;
+        bottom: 30%;
     }
 
     .primary-btn,.secondary-btn{
